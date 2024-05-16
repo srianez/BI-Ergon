@@ -30,8 +30,8 @@ public class LogDetailController {
 		return logDetailRepository.findAll();
 	}
 
-    @GetMapping("/logdetails/{id}")
-    public Optional<LogDetail> getLogDetailsById(@PathVariable java.lang.Integer id) {
-        return logDetailRepository.findByIdExec(id);
+    @GetMapping("/listByIdExec/{idExec}")
+    public List<LogDetail> getLogDetailsByIdExec(@PathVariable java.lang.Integer idExec) {
+        return logDetailRepository.findByIdExec(idExec);
     }
 }

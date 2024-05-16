@@ -11,6 +11,6 @@ import br.com.ergon.bi.model.LogDetail;
 @Repository
 public interface LogDetailRepository extends JpaRepository<LogDetail, java.lang.Integer> {
 	
-	Optional<LogDetail> findByIdExec(java.lang.Integer idExec);
+	List<LogDetail> findByIdExec(java.lang.Integer idExec);
 	
 }
