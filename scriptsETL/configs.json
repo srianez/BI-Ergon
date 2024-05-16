@@ -1,0 +1,18 @@
+{
+	"conexao_banco":{
+		"origem": "oracle+cx_oracle://ergonBI:ergonBI@54.233.134.92:1521/ergon",
+		"destino": "mysql+mysqlconnector://ergonBI:bhimA.123456.@localhost:3306/ergonbi"
+	},
+	"tabela":{
+		"func": "qs_funcionarios",
+		"freqAfast": "qs_freq_afast",
+		"pagtoCabec": "qs_pagamento_cabec",
+		"pagtoRubri": "qs_pagamento_rubricas"
+	},
+	"arquivo":{
+		"arquivoFunc": "D:/Techne/Extrator-BI/qs_funcionarios.parquet",
+		"arquivoFreqAfast": "D:/Techne/Extrator-BI/qs_freq_afast.parquet",
+		"arquivoPagtoCabec": "D:/Techne/Extrator-BI/qs_pagamento_cabec.parquet",
+		"arquivoPagtoRubri": "D:/Techne/Extrator-BI/qs_pagamento_rubricas.parquet"
+	}	
+}
