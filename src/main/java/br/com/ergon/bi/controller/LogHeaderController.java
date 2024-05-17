@@ -19,16 +19,10 @@ public class LogHeaderController {
     @Autowired
     LogHeaderRepository logHeaderRepository;
 	 
-	@GetMapping 
-	public String hello() {
-		return "oi";
-	}
-
 	@GetMapping("/listAll")
 	public List<LogHeader> listLogHeader(){
 		return logHeaderRepository.findAll();
 	}
-
 	
 	@GetMapping("/getAll")
 	public ResponseEntity<List<LogHeader>> getAll(){

@@ -20,11 +20,7 @@ public class LogDetailController {
 
     @Autowired
     LogDetailRepository logDetailRepository;
-	 
-	public String hello() {
-		return "oi detail";
-	}
-    
+	    
 	@GetMapping("/listAll")
 	public List<LogDetail> listLogDetail(){
 		return logDetailRepository.findAll();
@@ -34,4 +30,5 @@ public class LogDetailController {
     public List<LogDetail> getLogDetailsByIdExec(@PathVariable java.lang.Integer idExec) {
         return logDetailRepository.findByIdExec(idExec);
     }
+    
 }
